@@ -1,12 +1,14 @@
 Algoritmo "Questao 9"
 
 Var
-   valorVenda,valorCompra: real
+ valorCompra, valorVenda, valorImp, valorRep: real
 
 Inicio
-   escreval("O valor da compra")
-   leia(valorCompra)
-   valorVenda<- valorCompra+0.20+0.30
-   escreval("O valor da venda da mercadoria é", valorVenda)
+   escreval("Informe o valor da compra da mercadoria: ")
+   leia (valorCompra)
+   valorRep<- valorCompra*20/100
+   valorImp <-valorCompra*30/100
+   valorVenda<- valorCompra+valorRep+valorImp
+   escreval ("O valor da mercadoria é", valorVenda)
 
 Fimalgoritmo
